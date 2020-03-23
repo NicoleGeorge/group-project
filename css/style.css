@@ -1,4 +1,8 @@
 .jumbotron {
     background-color: blue;
     color: white;
+    text-align: center;
+}
+.card {
+    padding: 10px;
 }
