@@ -1,3 +1,4 @@
+
 var btnCast = document.querySelector('#characters');
 var btnQuotes = document.querySelector('#quotes');
 var btnCosplay = document.querySelector('#cosplay');
@@ -66,8 +67,5 @@ btnQuiz.addEventListener('click', function () {
     text.textContent = response.tvSeries;
   });
 });
-
-
-
 
 

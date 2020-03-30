@@ -1,0 +1,118 @@
+@font-face { font-family: Game of Thrones; src: url('Game of Thrones.TTF'); } 
+body{
+  background-color: #EFAD99 !important;
+  text-align: center;
+}
+#header{
+  background-color: #EFAD99 !important;
+  padding: 20px;
+  padding-top: 20px;
+}
+#header h1{
+  color:#914223;
+  font-family: 'Game of Thrones';
+ font-size: 60;
+
+}
+.gstyle{
+  font-size: 70px;
+  font-weight: bold;
+
+  }
+ li{
+   color: black;
+ }
+   .textbody{
+    width: 80%;
+   height: auto;
+   padding-top: 30px;
+  
+  }
+  .searchbar{
+    text-align: center;
+    background-color: #EFAD99 !important;
+
+  }
+  /*sticky footer css*/
+  
+.sticky-footer-css {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sticky-footer-css-body {
+  overflow: auto;
+}
+
+.sticky-footer-css .header {
+  background-color: #914223;
+ 
+  color: black;
+  padding: 3rem;
+  font-family: Cambria;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sticky-footer-css .header .menu a {
+  color: black;
+}
+.sticky-footer-css .header .menu a:hover {
+  color: white;
+  background: #914223;
+}
+
+.sticky-footer-css .body-content {
+  background-color: #fff;
+}
+
+.sticky-footer-css .footer {
+  height: 70px;
+  width:100% ;
+  background-color: #914223;
+  color: #fff;
+
+}
+
+.sticky-footer-css .footer .menu a {
+  color: #fff;
+}
+.searchrow{
+ 
+  text-align: center;
+ padding-left: 30%;
+}
+.searchstyle{
+  background-color:  #EFAD99 !important;
+  border: none;
+  width:70%;
+}
+.btnstyle{
+  background-color: #b3c9d2;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  width:300px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.logo{
+  width: 100px;
+height:60px;
+padding: 5px;
+padding-top: 10px;
+}
+
+.input-group-rounded .input-group-field {
+
+  padding-left: 40%;
+}
+
+.input-group-rounded .input-group-button .button {
+
+  font-size: 0.8rem;
+}
