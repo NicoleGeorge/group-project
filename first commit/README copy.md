@@ -1,1 +1,0 @@
-# suicide-squad-group-project
