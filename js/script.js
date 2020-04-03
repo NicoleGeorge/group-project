@@ -68,4 +68,3 @@ btnQuiz.addEventListener('click', function () {
   });
 });
 
-
