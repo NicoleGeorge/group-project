@@ -1,3 +1,4 @@
+
 /* BASE STYLES */
 
 body {
@@ -104,6 +105,7 @@ li {
 }
 
 /* STICKY FOOTER STYLES*/
+
   
 .sticky-footer-css {
   height: 100vh;
@@ -112,7 +114,7 @@ li {
   display: flex;
 }
 
-.sticky-header-css .header {
+.sticky-footer-css .header {
   background-color: #914223;
   color: black;
   padding: 3rem;
@@ -220,7 +222,3 @@ li {
   }
 
 }
-
-
-
-
