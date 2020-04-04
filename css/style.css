@@ -28,29 +28,6 @@ p {
 
 /* NAV BAR STYLES */
 
-.menubtn{
-  color: black;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  color:#110F15;
-  font-family: 'Montserrat', serif;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 0 20px;
-  
-}
-
-.menubtn:hover {
-  color: white;
-  background: #914223;
-  padding: 0 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-}
-/*
 .menu a {
   color: black;
   margin-top: 40px;
@@ -80,7 +57,7 @@ li {
   letter-spacing: 2px;
   padding: 0 20px;
 }
-*/
+
 /* SEARCH FIELD STYLES */
 
 .searchInput {
@@ -128,11 +105,6 @@ li {
 
 /* STICKY FOOTER STYLES*/
   
-.sticky-footer-css {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .sticky-header-css .header {
@@ -152,6 +124,10 @@ li {
   background-color: #110F15;
   color: #fff;
 
+}
+.menu a:active {
+  color: #914223;
+  background:#EFAD99;
 }
 
 .logo {
