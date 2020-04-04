@@ -6,6 +6,7 @@
     <title>Game of Thrones | Fandom App.</title>
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7d05c66ef1.js" crossorigin="anonymous"></script>
     <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap" rel="stylesheet">
   </head>
@@ -23,6 +24,22 @@
   </header>
       
   <!-- End: Header -->
+  
+  <!-- Start: Search Button-->
+
+  <div class="row searchrow "> 
+    <div class="cell large-9 text-center text-center  ">
+      <h4>search instruction text too go here.</h4>
+      <form>
+        <div class="input-group text-center searchstyle">
+          <input class="input-group-field text-center searchInput" type="text" placeholder="Jon Snow" required/>
+          <button id="search" class="btnStyle"><i class="fas fa-search searchIcon"></i></button>
+        </div>  
+      </form>
+    </div>     
+  </div>
+
+  <!-- End: Search Button-->
 
   <!-- Start: Navbar Menu -->
 
@@ -30,11 +47,11 @@
       <div class="columns">
         <ul class="menu align-center">
           <div><hr></div>
-            <li class="textmenu is-active"><a href="#first">CHARACTER</a></li>
-            <li><a href="#second">BOOK</a></li>
-            <li><a href="#third">COSPLAY</a></li>
-            <li><a href="#third">MERCH</a></li>
-            <li><a href="#third">QUIZ</a></li>
+            <li class="textmenu is-active"><a href="#first"><i class="fas fa-user-shield icon"></i> Character</a></li>
+            <li><a href="#second"><i class="fas fa-book icon"></i> Book</a></li>
+            <li><a href="#third"><i class="fas fa-photo-video"></i> giphs</a></li>
+            <li><a href="#fourth"><i class="fas fa-newspaper"></i> news</a></li>
+            <li><a href="#fifth"><i class="fas fa-portrait"></i> images</a></li>
         </ul>
       </div>
     </div>
@@ -54,27 +71,14 @@
 
   <!-- End: Main Content Area -->
 
-  <!-- Start: Search Button-->
-
-    <div class="row searchrow "> 
-      <div class="cell large-9 text-center text-center  ">
-        <form>
-          <div class="input-group text-center searchstyle">
-            <input class="input-group-field text-center searchInput" type="text" placeholder="enter a GoT character name" required/>
-            <button id="search" class="btnStyle">SEARCH</button>
-          </div>  
-        </form>
-      </div>     
-    </div>
   
-    <!-- End: Search Button-->
 
     <!-- Start: Footer-->
 
     <div class="sticky-footer">
       <div class="cell large-12 text-center  text-center">
         <p><img class="logo" src="assets/images/logo.png" alt="" /></p>
-        <p class="text-centre">Designed + Developed by Suicide Squad for OzComicCon</p>
+        <p class="text-centre text-footer placeholder">Designed + Developed by Suicide Squad for OzComicCon</p>
       </div>
     </div>
 
