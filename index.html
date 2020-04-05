@@ -45,7 +45,7 @@
           <div class="input-group text-center searchstyle">
             <input
               class="input-group-field text-center searchInput"
-              type="text"
+              id="search-input" type="text"
               placeholder="Jon Snow"
               required
             />
@@ -70,9 +70,12 @@
           alt="Game of thrones cast illustration"
         />
         <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-        <div class="content text-center"></div>
-        <div class="content2 text-center"></div>
-        <div class="content3 text-center"></div>
+        <div class="results">
+          <div class="content"></div>
+          <div class="content2"></div>
+          <div class="content3"></div>
+          <div class="content4"></div>
+        </div>
         <p class="text-center"></p>
       </div>
     </div>
@@ -151,10 +154,11 @@
     <!-- END: Footer-->
 
     <!-- Script tags -->
-    <script src="js/app.js"></script>
-    <script src="js/got.js"></script>
+  
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(document).foundation();
     </script>
