@@ -1,4 +1,5 @@
 
+
 // $(document).ready(function () {
 //     $("#search").on("click", function () {
 //         $(".textbody").hide();
@@ -74,7 +75,7 @@ $(document).ready(function () {
 
         console.log(searchGphi);
         $.ajax({
-            url: "https://api.giphy.com/v1/gifs/search?api_key=1b9vjVExJH3Q7oUfZjCv78VsNa9i3RS5&limit=1&q=" + searchGphi,
+            url: `https://api.giphy.com/v1/gifs/search?api_key=w5F8XRxKHMrbEYBn1oSBE3J3gmsYZ9v2&limit=1&q=${searchGphi}`,
             method: "GET"
         }).then(function (response) {
             console.log(response, "line 81");
@@ -83,3 +84,6 @@ $(document).ready(function () {
     });
 
 });
+
+
+
