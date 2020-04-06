@@ -140,9 +140,13 @@ $("#imdb").on("click", function () {
 
     });
 });
+
 $("#search").on("click", function () {
     $(".textbody").hide();
     $("#test-eq").show();
     $(".results").hide();
 });
+
+
+
 
