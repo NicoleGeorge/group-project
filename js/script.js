@@ -69,7 +69,42 @@ $("#imdb").on("click", function () {
         method: "GET"
     }).then(function (data) {
         console.log(data);
-        
+    //     $(".content5").append(movieInfo);
+    //     var movieInfo = $("<div>");
+    //     var title = $("<p>").text("Title: " + data.Title);
+    //    $("div").append(title);
+    var title = $("<p>").text("Title: " + data.Title);
+    $(".content5").append(title);
+
+    var release = $("<p>").text("Released: " + data.Released);
+    $(".content5").append(release);
+
+    var year = $("<p>").text("Year: " + data.Year);
+    $(".content5").append(year);
+
+    var genre = $("<p>").text("Genre: " + data.Genre);
+    $(".content5").append(genre);
+
+    var actors = $("<p>").text("Actors: " + data.Actors);
+    $(".content5").append(actors);
+
+
+    var plot = $("<p>").text("Plot: " + data.Plot);
+    $(".content5").append(plot);
+
+    var awards = $("<p>").text("Awards: " + data.Awards);
+    $(".content5").append(awards);
+    
+    var writer = $("<p>").text("Writer: " + data.Writer);
+    $(".content5").append(writer);
+
+    var imdbVotes= $("<p>").text("ImdbVotes: " + data.imdbVotes);
+    $(".content5").append(imdbVotes);
+
+    var image = $("<img>");
+    image.attr("src", data.Poster);
+     $(".content5").append(image);
+ 
        
     });
 });
