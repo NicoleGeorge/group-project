@@ -1,134 +1,420 @@
 /* BASE STYLES */
 
 body {
-  margin-top: 20px;
-  background-color: #B3C9D2 !important;
+  /* margin-top: 10px; */
+  background-color: #b3c9d2 !important;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.app-logo {
+  width: 270px;
+  height: 200px;
+  padding: 5px;
+  padding-top: 10px;
 }
 
 .textbody {
   width: 80%;
   height: auto;
-  padding-top: 30px;  
+  padding-top: 30px;
 }
 
 .header {
-  background-color: #B3C9D2 !important;
+  background-color: #b3c9d2 !important;
   padding: 20px;
   padding-top: 20px;
 }
 
-.sticky-header-css .header { 
-  background-color: #914223;
-  color: black;
-  padding: 3rem;
-  font-family: Cambria;
-  font-weight: bold;
-  font-size: 20px;
+.hero {
+  z-index: -1;
+}
+/*maincontent style*/
+
+.portfolio-resume-scrolling-container {
+  height: 400px;
 }
 
-p.text-footer {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-top: 5px;
+.portfolio-resume-overview {
+  height:920px;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 
+.portfolio-resume-overview:after {
+  content: "";
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/images/GoT-Logo-bkgd2.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  justify-content: center;
+ padding: auto;
+  z-index: -1;
+}
+
+
+
+/* BACKGROUND IMG IN*/
 /* SEARCH FIELD STYLES */
 
 .searchInput {
-  color:#9B2C33;
+  color: #9b2c33;
   font-weight: bold;
   text-align: center;
   padding: 20px 20px;
-  width:150px;
+  width: 150px;
   height: 60px;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 .searchrow {
   margin-top: 55px;
-  background-color:  #B3C9D2 !important;
+  background-color: #b3c9d2 !important;
   border: none;
   position: relative;
   left: 15%;
   top: 50%;
-  width:70%;
+  width: 70%;
 }
 
 .btnStyle {
-  background-color:#9B2C33;
-  color:#EFAD99;
+  background-color: #110f15;
+  color: #efad99;
   font-weight: bold;
   text-align: center;
   padding: 20px 20px;
-  width:150px;
+  width: 150px;
   height: 60px;
-  margin: 10px 10px;
+  margin: 10px 0;
 }
 
 .btnStyle:hover {
-  background-color:#EFAD99; 
-  color:#9B2C33;
+  background-color: #efad99;
+  color: #9b2c33;
   font-weight: bold;
   text-align: center;
   padding: 20px 20px;
-  width:150px;
+  width: 150px;
   height: 60px;
-  margin: 10px 10px;
+  margin: 10px 0;
 }
 
 /* MENU STYLES */
 
 .menu {
-margin-top: 50px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .menu a {
   color: white;
-  background: #914223;
+  font-size: 20px;
+  background: #9b2c33;
   margin-top: 40px;
   margin-bottom: 10px;
+  padding: 40px 40px;
 }
 
 .menu a:hover {
   color: #914223;
-  background:#EFAD99;
+  background: #efad99;
 }
 .menu a:active {
   color: #914223;
-  background:#EFAD99;
+  background: #efad99;
 }
 
 .menu .is-active > a {
-  background:#EFAD99;
+  background: #efad99;
   color: #914223;
 }
 
 li {
-  color:#110F15;
-  font-family: 'Montserrat', serif;
-  font-size: 18px;
+  color: #110f15;
+  font-family: "Montserrat", serif;
+  font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 20px;
+  align-content: center;
 }
+
+.icon {
+  margin-bottom: 10px;
+}
+
+/* USER REGISTRATION */
+
+.register-row {
+  margin-top: 25px;
+  position: relative;
+  left: 45%;
+  width: 100%;
+}
+
+.registerBtnStyle {
+  background-color: #110f15;
+  color: #efad99;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 10px;
+  box-shadow: 5px 5px;
+}
+
+.registerBtnStyle:hover {
+  background-color: #efad99;
+  color: #110f15;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 10px;
+  box-shadow: 5px 5px;
+}
+
+/* FORM STYLE FOR REGISTRATION*/
+
+.login-box {
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  background: #fefefe;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.login-box .or {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  min-width: 2.1em;
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  text-align: center;
+  font-size: 1.275rem;
+  background: #cacaca;
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .login-box .or {
+    top: 85%;
+  }
+}
+
+.login-box-title {
+  font-weight: 300;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.login-box-form-section,
+.login-box-social-section-inner {
+  padding: 2.5rem;
+}
+
+.login-box-social-section {
+  background: url("../assets/images/");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box-input {
+  margin-bottom: 1.25rem;
+  height: 2rem;
+  border: 0;
+  padding-left: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #1779ba;
+  font-weight: 400;
+}
+
+.login-box-input:focus {
+  color: #1779ba;
+  transition: 0.2s ease-in-out;
+  box-shadow: none;
+  border: 0;
+  border-bottom: 2px solid #1779ba;
+}
+
+.login-box-submit-button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+[data-whatinput='mouse'] .login-box-submit-button {
+  outline: 0;
+}
+
+.login-box-submit-button:hover, .login-box-submit-button:focus {
+  background-color: #126195;
+  color: #fefefe;
+}
+
+.login-box-submit-button:hover,
+.login-box-submit-button:focus {
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+}
+
+.login-box-submit-button:active {
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.4);
+}
+
+.login-box-social-button-facebook {
+  
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #3b5998;
+  color: #fefefe;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+[data-whatinput='mouse'] .login-box-social-button-facebook {
+  outline: 0;
+}
+
+.login-box-social-button-facebook:hover, .login-box-social-button-facebook:focus {
+  background-color: #2f477a;
+  color: #fefefe;
+}
+
+.login-box-social-button-twitter {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #55acee;
+  color: #fefefe;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+[data-whatinput='mouse'] .login-box-social-button-twitter {
+  outline: 0;
+}
+
+.login-box-social-button-twitter:hover, .login-box-social-button-twitter:focus {
+  background-color: #1a8fe8;
+  color: #fefefe;
+}
+
+.login-box-social-button-google {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #dd4b39;
+  color: #fefefe;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+[data-whatinput='mouse'] .login-box-social-button-google {
+  outline: 0;
+}
+
+.login-box-social-button-google:hover, .login-box-social-button-google:focus {
+  background-color: #be3221;
+  color: #fefefe;
+}
+
+[class*="login-box-social-button-"]:hover,
+[class*="login-box-social-button-"]:focus {
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+}
+
+.login-box-social-headline {
+  display: block;
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
+  color: #fefefe;
+  text-align: center;
+}
+
 
 /* STICKY FOOTER STYLES*/
   
-}
+
 
 .sticky-footer {
   margin-top: 25px;
   padding: 20px 0;
   height: 150px;
   width: 100%;
-  background-color: #110F15;
+  background-color: #110f15;
   color: #fff;
-
 }
 .menu a:active {
   color: #914223;
@@ -137,32 +423,73 @@ li {
 
 .logo {
   width: 100px;
-  height:60px;
+  height: 60px;
   padding: 5px;
   padding-top: 10px;
 }
+
+p.text-footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+/* INPUT BOX */
+
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
 
 /* MEDIA QUERIES */
 
 /* MOBILE VIEWORT */
 @media screen and (max-width: 39.9375em) {
-
   .sticky-header-css .header {
-    padding-top: 10px;
-    padding-bottom:  0; 
+    padding-top: 20px;
+    padding-bottom: 0;
   }
 
   img {
     display: inline-block;
     vertical-align: middle;
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     -ms-interpolation-mode: bicubic;
   }
 
   .textbody {
     width: 70%;
-    padding-top: 20px 0;  
+    padding-top: 20px 0;
   }
 
   /* SEARCH FIELDS */
@@ -174,58 +501,59 @@ li {
     position: relative;
     left: 5%;
     top: 50%;
-    width:90%;
+    width: 90%;
   }
 
   .searchInput {
-    color:#9B2C33;
+    color: #9b2c33;
     font-weight: bold;
     text-align: center;
     padding: 5px 5px;
-    width:100px;
+    width: 100px;
     height: 40px;
-    margin: 10px 5px;
+    margin: 10px 0;
+    border-radius: 5px;
   }
 
   .btnStyle {
     font-size: 12px;
-    background-color:#9B2C33;
-    color:#EFAD99;
+    background-color: #110f15;
+    color: #efad99;
     align-content: center;
     padding: 5px 5px;
     height: 40px;
-    margin: 10px 5px;
+    margin: 10px 0;
   }
 
   .btnStyle:hover {
     font-size: 12px;
     padding: 5px 5px;
     height: 40px;
-    margin: 10px 5px;
+    margin: 10px 0;
   }
 
   .sticky-footer-css {
     height: 100vh;
     display: flex;
   }
-  
+
   .sticky-footer {
     margin-top: 25px;
     padding: 20px 0;
     height: 100px;
     width: 100%;
-    background-color: #110F15;
+    background-color: #110f15;
     color: #fff;
-  
   }
-  
+
   /* MENU STYLE */
   .menu a {
-    margin: 15px 0;
+    padding: 22px 20px;
+    font-size: 10px;
   }
 
   li {
-    font-size: 8px;
+    font-size: 10px;
     padding: 0 2px;
   }
 
@@ -249,18 +577,35 @@ li {
     font-size: 12px;
   }
 
+  /* REGISTRATION STYLES */
+  .register-row {
+    margin-top: 25px;
+    border: none;
+    position: relative;
+    left: 35%;
+    width: 100%;
+  }
 }
 
 /* TABLET VIEWPORT */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .menu a {
+    margin: 15px 0;
+    padding: 25px 25px;
+    font-size: 16px;
+  }
 
   li {
     font-size: 14px;
     padding: 0 5px;
   }
-
+}
+.portfolio-resume-scrolling {
+  height: 200px;
+  overflow-y: auto;
 }
 
 
-
-
+.portfolio-resume-scrolling-container {
+  height: 400px;
+}

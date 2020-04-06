@@ -1,100 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game of Thrones | Fandom App.</title>
-    <link href="css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/7d05c66ef1.js" crossorigin="anonymous"></script>
-    <!--google font-->
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap" rel="stylesheet">
-  </head>
 
-  <!-- Start: Body Content -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Thrones | Fandom App.</title>
+  <link href="css/app.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/7d05c66ef1.js" crossorigin="anonymous"></script>
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
+    rel="stylesheet" />
+</head>
 
-  <body>
-  <!-- Start: Header -->
+<!-- START: Body Content -->
+
+<body>
+  <!-- START: Header -->
   <header class="sticky-header-css">
     <div class="row expanded flex-dir-column">
-        <div class="columns shrink header text-center" id="header">
-          <img src="./assets/images/GoT-Logo-sm.png"/>
-        </div>
+      <div class="columns shrink header text-center" id="header">
+        <img src="./assets/images/GoT - Logo - final.png" class="app-logo" alt="GoT The Fandom Zone logo" />
+      </div>
     </div>
   </header>
-      
-  <!-- End: Header -->
-  
-  <!-- Start: Search Button-->
 
-  <div class="row searchrow "> 
-    <div class="cell large-9 text-center text-center  ">
+  <!-- END: Header -->
+
+  <!-- START: Search Button-->
+
+  <div class="row searchrow">
+    <div class="cell large-9 text-center text-center">
       <p>Kit Harington is coming... & wants to meet YOU!</p>
-      <p> </p>
+      <p></p>
       <form>
         <div class="input-group text-center searchstyle">
-          <input class="input-group-field text-center searchInput" type="text" placeholder="Jon Snow" required/>
-          <button id="search" class="btnStyle"><i class="fas fa-search searchIcon"></i></button>
-        </div>  
+          <input class="input-group-field text-center searchInput" type="text" placeholder="Jon Snow" required />
+          <button id="search" class="btnStyle">
+            <i class="fas fa-search searchIcon"></i>
+          </button>
+        </div>
       </form>
-    </div>     
+    </div>
   </div>
 
-  <!-- End: Search Button-->
+  <!-- END: Search Button-->
 
-  <!-- Start: Main Content Area -->
+  <!-- START: Main Content Area -->
+      <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="test-eq">
+        <!--left side empty columns-->
+        <div class="cell medium-3"> </div>
+        <!--main content with background-->
+        <div class="cell medium-6">
+          <div class="portfolio-resume-scrolling-container row">
+            <div class="columns small-12  portfolio-resume-overview">
+              <div class="portfolio-resume-overview-content">
+              </div>
+            </div>
+          </div>
 
-    <div class="cell medium-12 text-center">
-      <div id="maincontent">
-        <img class="textbody" src="assets/images/stark-emblem.png" alt="game of thrones fandom app emblem" />
-        <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-        <p class="text-center"></p>
-      </div>  
+        </div> <!-- End main content with background-->
+        
+        <!--Right side empty columns-->
+        <div class="cell medium-3"> </div>
+      </div>
+      
+  <!-- END: Main Content Area -->
+
+<!-- START: register Content Area -->
+<div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="register">
+  <!--left side empty columns-->
+  <div class="cell medium-3"> </div>
+  <!--main content with Register form-->
+  <div class="cell medium-6">
+  
+    <div class="login-box">
+      <div class="row collapse expanded">
+        <div class="cell medium-6">
+          <div class="login-box-form-section">
+            <h1 class="login-box-title">Register Now</h1>
+            <input class="login-box-input" type="text" name="username" placeholder="First Name" />
+            <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+            <input class="login-box-input" type="password" name="password" placeholder="Password" />
+            <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />
+            <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+          </div>
+        
+        </div>
+      <div class="cell medium-6">
+          <div class="login-box-social-section-inner">
+            <span class="login-box-social-headline">Sign in with<br />your social network</span>
+            <a class="login-box-social-button-facebook">Log in with facebook</a>
+            <a class="login-box-social-button-twitter">Log in with Twitter</a>
+            <a class="login-box-social-button-google">Log in with Google+</a>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
+  </div> <!-- End main content with background-->
+  
+  <!--Right side empty columns-->
+  <div class="cell medium-3"> </div>
+</div>
 
-  <!-- End: Main Content Area -->
+<!-- END: Register Content Area -->
 
-  <!-- Start: Menu Links -->
+
+  <!-- START: Menu Links -->
 
   <div class="row">
     <div class="columns">
       <ul class="menu align-center">
-        <div><hr></div>
-          <li class="textmenu is-active"><a href="#first"><i class="fas fa-user-shield icon"></i> Character</a></li>
-          <li><a href="#second"><i class="fas fa-book icon"></i> Book</a></li>
-          <li><a href="#third"><i class="fas fa-photo-video"></i> giphs</a></li>
-          <li><a href="#fourth"><i class="fas fa-newspaper"></i> news</a></li>
-          <li><a href="#fifth"><i class="fas fa-portrait"></i> images</a></li>
+        <div>
+          <hr />
+        </div>
+        <li class="textmenu is-active">
+          <a href="#first"><i class="fas fa-user-shield icon"></i><br />
+            Character</a>
+        </li>
+        <li>
+          <a href="#second"><i class="fas fa-book icon"></i><br />
+            Book</a>
+        </li>
+        <li>
+          <a href="#third"><i class="fas fa-photo-video icon"></i><br />
+            giphs</a>
+        </li>
+        <li>
+          <a href="#fourth"><i class="fas fa-newspaper icon"></i><br />
+            news</a>
+        </li>
+        <li>
+          <a href="#fifth"><i class="fas fa-portrait icon"></i><br />
+            images</a>
+        </li>
       </ul>
     </div>
   </div>
 
-<!-- End: Menu Links -->
+  <!-- END: Menu Links -->
 
-    <!-- Start: Footer-->
+  <!-- START: Register input fields -->
 
-    <div class="sticky-footer">
-      <div class="cell large-12 text-center  text-center">
-        <p><img class="logo" src="assets/images/logo.png" alt="" /></p>
-        <p class="text-center text-footer placeholder">Designed + Developed by Suicide Squad for OzComicCon</p>
-      </div>
+  <div class="row register-row">
+    <div class="cell small-12 text-center">
+      <form>
+        <div class="input-group text-center searchstyle">
+          <button id="search" class="registerBtnStyle">
+            <i class=""></i>REGISTER NOW
+          </button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <!-- End: Footer-->
+  <!-- END: Register input fields -->
 
-    <!-- Script tags -->
-    <script src="js/app.js"></script>
-    <script src ="js/script.js"></script>
-    <script src="js/scrept_1.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  
+  <!-- START: Footer-->
+
+  <div class="sticky-footer">
+    <div class="cell large-12 text-center text-center">
+      <p><img class="logo" src="assets/images/logo.png" alt="" /></p>
+      <p class="text-center text-footer placeholder">
+        Designed + Developed by Suicide Squad for OzComicCon
+      </p>
+    </div>
+  </div>
+
+
+  <!-- END: Footer-->
+
+  <!-- Script tags -->
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+
   <!-- End: Body Content -->
-  </body>
+</body>
+
 </html>
-
-
-
