@@ -3,6 +3,7 @@
 $(document).ready(function () {
 
     $(".btnStyle").on("click", function () {
+        event.preventDefault();
         $(".textbody").hide();
 
         var search = $(".searchInput").val();
@@ -16,7 +17,7 @@ $(document).ready(function () {
             url: queryURL,
             method: "GET"
         }).then(function (data) {
-        
+
             $(".content").text("CHARACTER = " + data[0].culture + " " + data[0].gender + " " + data[0].aliases + " " + data[0].aliases);
         });
 
@@ -37,35 +38,37 @@ $(document).ready(function () {
             console.log(data);
             $(".content3").text("HOUSE = " + data[0].name + " " + data[0].region + " " + data[0].coatOfArms + " " + data[0].aliases);
         });
-      
-    //     //API Tvshow information
 
-    //     var searchTv = $("#search-input").val();
-    //     console.log(searchTv,"43");
+        //API Tvshow information
 
-       
-    //     $.ajax({
-    //         url:  "https://www.episodate.com/api/search?q=" + seachTV + "&page=1" ,
-    //         method: "GET"
-    //     }).then(function (data) {
-          
-    //         $(".content4").text("Tv = " + data.tv_shows.country);
-    //     });
+        // var searchTv = $(".searchInput").val();
+        // $.ajax({
+        //     url: "http://www.omdbapi.com/?i=tt3896198&apikey=ce894930",
+        //     method: "GET"
+        // }).then(function (data) {
+        //     console.log(data, "51");
+        //     $(".content4").text("TV =" + data[0].show.name);
+        // });
 
 
-    //    //API ghipy
+        //API ghipy
 
-    //     var searchGphi = $("#search-input").val();
-    //     console.log(searchGphi);
-    //     $.ajax({
-    //         url: `https://api.giphy.com/v1/gifs/search?api_key=1b9vjVExJH3Q7oUfZjCv78VsNa9i3RS5&limit=1&q=${searchGphi}`,
-    //         method: "GET"
-    //     }).then(function (response) {
-    //         console.log(response, "line 81");
-    //         $("#ghipy").attr('src'+ response.data[0].images.downsized_large.url);
-    //     });
+        // var searchGphi = $(".searchInput").val();
+         
+        // console.log(searchGphi);
+        // $.ajax({
+        //     url: "https://api.giphy.com/v1/gifs/search?api_key=1b9vjVExJH3Q7oUfZjCv78VsNa9i3RS5&limit=1&q=",
+        //     method: "GET"
+        // }).then(function (response) {
+        //     console.log(response);
+        //     var img = $("<img>"); 
+        //     img.src = response.data[0].images.downsized_large.url;
+        //     $(".content4").append(img);
 
-        
+        //    // $("#ghipy").attr('src' + response.data[0].images.downsized_large.url);
+
+        // });
+
     });
 
 });
