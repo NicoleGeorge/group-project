@@ -299,6 +299,17 @@ p.text-footer {
     width: 100%;
   }
 }
+/*FORM REGISTRATION STYLE*/
+.form_style{
+  background-color: #efad99;
+  margin: 20px;
+  padding: 20px;
+
+}
+
+#test-eq{
+  display: none;
+}
 
 /* TABLET VIEWPORT */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
