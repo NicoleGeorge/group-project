@@ -3,6 +3,7 @@ $(".btnStyle").on("click", function () {
     $(".textbody").hide();
     var search = $("#search-input").val();
     console.log(search);
+    //Character Information API
     var queryURL = "https://www.anapioficeandfire.com/api/characters/?name=" + search;
     $.ajax({
         url: queryURL,
@@ -24,7 +25,7 @@ $(".btnStyle").on("click", function () {
         $(".content").append(aliases);
 
     });
-
+    // Book API
     var queryURLbooks = "https://www.anapioficeandfire.com/api/books/5";
     $.ajax({
         url: queryURLbooks,
@@ -47,6 +48,7 @@ $(".btnStyle").on("click", function () {
         var released = $("<p>").text("Released: " + data.released);
         $(".content2").append(released);
     });
+    // House API
     var queryURLHouses = "https://www.anapioficeandfire.com/api/houses";
     $.ajax({
         url: queryURLHouses,
@@ -62,7 +64,7 @@ $(".btnStyle").on("click", function () {
         $(".content3").append(coatOfArms);
 
     });
-
+    // Giphy API
     var queryGiphy = "https://api.giphy.com/v1/gifs/search?api_key=w5F8XRxKHMrbEYBn1oSBE3J3gmsYZ9v2&limit=1&q=";
     var str = document.getElementById("search-input").value.trim();
     queryGiphy = queryGiphy.concat(str);
