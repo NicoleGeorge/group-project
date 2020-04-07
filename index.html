@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Thrones | The Fandom Zone</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7d05c66ef1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--google font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Italianno|Jim+Nightshade|Lovers+Quarrel|Tangerine&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game of Thrones | Fandom App.</title>
-  <link href="css/app.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://kit.fontawesome.com/7d05c66ef1.js" crossorigin="anonymous"></script>
-  <!--google font-->
-  <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
-    rel="stylesheet" />
-</head>
+  <!-- START: Body Content -->
 
-<!-- START: Body Content -->
+  <body>
+    <!-- START: Header -->
+    <header class="sticky-header-css">
+      <div class="row expanded flex-dir-column">
+        <div class="columns shrink header text-center" id="header">
+          <img
+            src="./assets/images/GoT - Logo - final.png"
+            class="app-logo"
+            alt="GoT The Fandom Zone logo"
+          />
+        </div>
+      </div>
+    </header>
 
-<body>
-  <!-- START: Header -->
-  <header class="sticky-header-css">
-    <div class="row expanded flex-dir-column">
-      <div class="columns shrink header text-center" id="header">
-        <img src="./assets/images/GoT - Logo - final.png" class="app-logo" alt="GoT The Fandom Zone logo" />
+    <!-- END: Header -->
+
+    <!-- START: Search Button-->
+
+    <div class="row searchrow">
+      <div class="cell large-9 text-center text-center">
+        <p class="fandom">enter your favourite GoT character name below</p>
+        <p class="catchy-title">
+          to enter the fandom zone...the place where the magic happens
+          <i class="fas fa-feather-alt quill"></i>
+        </p>
+        <p></p>
+        <form>
+          <div class="input-group text-center searchstyle">
+            <input
+              class="input-group-field text-center searchInput"
+              id="search-input"
+              type="text"
+              placeholder="Jon Snow"
+              required
+            />
+            <button id="search" class="btnStyle">
+              <i class="fas fa-search searchIcon"></i>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -30,43 +72,34 @@
 
     <div class="cell medium-12 text-center">
       <div id="maincontent">
-        <img
-          class="textbody"
-          src="assets/images/GoT-Logo-bkgd2.png"
-          class="hero"
-          alt="Game of thrones cast illustration"
-        />
-        <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-        <div class="results">
-          <div class="content" id="site1"></div>
-          <div class="content2" id="site2"></div>
-          <div class="content3"></div>
-          <div class="content4" id="site3"></div>
-          <div class="content5"></div>
+        <div class="text-center textbody hero">
+          <p class="display-text">
+            Oz Comic-Con invites Game of Thrones fans of all ages to a truly
+            unfrogettable experience. Our Special guest at Oz Comic-Con 2021 is
+            the Jon Snow himself, Mr. Kit Harington. But wait...there more.<br /><br />
+            We are offering <span class="lucky">one lucky</span> fan the chance
+            to meet Kit, receive a persnalised autograph and photo session. To
+            be in the running, simply search your favourite GoT character above,
+            then select what you would like to learn about them below. Life is
+            not a song, sweetling. Someday you may learn that, to your sorrow.
+            So, once you've chosen your character, register your entry below. As
+            Summer will end soon enough, and childhood as well, so onward on
+            your quest to be the ruler of the GoT Fandom Zone!
+          </p>
         </div>
-      </form>
-    </div>
-  </div>
+        <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
 
-  <!-- END: Search Button-->
-
-  <!-- START: Main Content Area -->
-
-  <div class="cell medium-12 text-center">
-    <div id="maincontent">
-      <img class="textbody" src="assets/images/GoT-Logo-bkgd2.png" class="hero"
-        alt="Game of thrones cast illustration" />
-      <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-      <div class="results">
-        <div class="content"></div>
-        <div class="content2"></div>
-        <div class="content3"></div>
-        <div class="content4"></div>
-        <div class="content5"></div>
-        <div class="content6"></div>
-        <div class="content7"></div>
+        <div class="results">
+          <div class="content1 output-results" id="site1"></div>
+          <div class="content2 output-results"></div>
+          <div class="content3 output-results"></div>
+          <div class="content4 output-results figcaption"></div>
+          <div class="content5 output-results"></div>
+        </div>
+        <p class="text-center"></p>
       </div>
       <p class="text-center"></p>
+
     </div>
   </div>
 
@@ -80,20 +113,20 @@
           <div><hr /></div>
           <li class="textmenu is-active">
             <a href="#site1"
-              ><i class="https://awoiaf.westeros.org/index.php/Main_Page"></i><br />
+              ><i class="fas fa-user-shield icon"></i><br />
               Character</a
             >
           </li>
           <li>
-            <a href="#site2"
-              ><i class="fas fa-book icon"></i><br />
-              Books</a
+            <a href="https://gameofthrones.fandom.com/wiki/Great_House"
+              ><i class="fab fa-fort-awesome icon"></i><br />
+              Houses</a
             >
           </li>
           <li>
             <a href="#rating" id="imdb"
               ><i class="fas fa-tv icon"></i><br />
-              Movie Info</a
+              T.V Info</a
             >
           </li>
           <!-- <li>
@@ -103,8 +136,8 @@
             >
           </li> -->
         <li>
-          <a href="https://giphy.com/explore/game-of-thrones"><i class="fas fa-photo-video icon"></i><br />
-            giphys</a>
+          <a href="#site3"><i class="fas fa-photo-video icon"></i><br />
+            Giphys</a>
         </li>
       </ul>
     </div>
@@ -142,14 +175,16 @@
   <!-- END: Footer-->
 
   <!-- Script tags -->
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script src="js/app.js"></script>
   <script src="js/script.js"></script>
-
   <script>
     $(document).foundation();
   </script>
 
   <!-- End: Body Content -->
 </body>
+
+</html>
