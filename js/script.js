@@ -75,7 +75,6 @@ $(".btnStyle").on("click", function () {
             fig.appendChild(fc);
             var content3 = document.querySelector(".content3");
             content3.prepend(fig);
-            var music = document.createElement("mp4");
         })
         .catch(err => {
             console.log(err);
