@@ -69,8 +69,8 @@ $(".btnStyle").on("click", function () {
             fc.textContent = content.data[0].title;
             fig.appendChild(img);
             fig.appendChild(fc);
-            var content4 = document.querySelector(".content4");
-            content4.prepend(fig);
+            var content3 = document.querySelector(".content3");
+            content3.prepend(fig);
             var music = document.createElement("mp4");
         })
         .catch(err => {
@@ -92,36 +92,36 @@ $("#imdb").on("click", function () {
         console.log(data);
 
         var title = $("<p>").text("Title: " + data.Title);
-        $(".content5").append(title);
+        $(".content4").append(title);
 
         var release = $("<p>").text("Released: " + data.Released);
-        $(".content5").append(release);
+        $(".content4").append(release);
 
         var year = $("<p>").text("Year: " + data.Year);
-        $(".content5").append(year);
+        $(".content4").append(year);
 
         var genre = $("<p>").text("Genre: " + data.Genre);
-        $(".content5").append(genre);
+        $(".content4").append(genre);
 
         var actors = $("<p>").text("Actors: " + data.Actors);
-        $(".content5").append(actors);
+        $(".content4").append(actors);
 
 
         var plot = $("<p>").text("Plot: " + data.Plot);
-        $(".content5").append(plot);
+        $(".content4").append(plot);
 
         var awards = $("<p>").text("Awards: " + data.Awards);
-        $(".content5").append(awards);
+        $(".content4").append(awards);
 
         var writer = $("<p>").text("Writer: " + data.Writer);
-        $(".content5").append(writer);
+        $(".content4").append(writer);
 
         var imdbVotes = $("<p>").text("ImdbVotes: " + data.imdbVotes);
-        $(".content5").append(imdbVotes);
+        $(".content4").append(imdbVotes);
 
         var image = $("<img>");
         image.attr("src", data.Poster);
-        $(".content5").append(image);
+        $(".content4").append(image);
 
 
     });

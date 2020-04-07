@@ -1,182 +1,164 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game of Thrones | Fandom App.</title>
-    <link href="css/app.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/7d05c66ef1.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--google font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <!-- START: Body Content -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Thrones | Fandom App.</title>
+  <link href="css/app.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/7d05c66ef1.js" crossorigin="anonymous"></script>
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
+    rel="stylesheet" />
+</head>
 
-  <body>
-    <!-- START: Header -->
-    <header class="sticky-header-css">
-      <div class="row expanded flex-dir-column">
-        <div class="columns shrink header text-center" id="header">
-          <img
-            src="./assets/images/GoT - Logo - final.png"
-            class="app-logo"
-            alt="GoT The Fandom Zone logo"
-          />
-        </div>
-      </div>
-    </header>
+<!-- START: Body Content -->
 
-    <!-- END: Header -->
-
-    <!-- START: Search Button-->
-
-    <div class="row searchrow">
-      <div class="cell large-9 text-center text-center">
-        <p>Welcome to the <span class="fandom">fandom zone</span>!</p>
-        <p></p>
-        <p></p>
-        <form>
-          <div class="input-group text-center searchstyle">
-            <input
-              class="input-group-field text-center searchInput"
-              id="search-input" type="text"
-              placeholder="Jon Snow"
-              required
-            />
-            <button id="search" class="btnStyle">
-              <i class="fas fa-search searchIcon"></i>
-            </button>
-          </div>
-        </form>
+<body>
+  <!-- START: Header -->
+  <header class="sticky-header-css">
+    <div class="row expanded flex-dir-column">
+      <div class="columns shrink header text-center" id="header">
+        <img src="./assets/images/GoT - Logo - final.png" class="app-logo" alt="GoT The Fandom Zone logo" />
       </div>
     </div>
+  </header>
 
-    <!-- END: Search Button-->
+  <!-- END: Header -->
 
-    <!-- START: Main Content Area -->
+  <!-- START: Search Button-->
 
-    <div class="cell medium-12 text-center">
-      <div id="maincontent">
-        <div class="text-center textbody hero">
-          <p class="display-text">
-            Oz Comic-Con invites Game of Thrones fans of all ages to a truly
-            unfrogettable experience. Our Special guest at the Oz Comic-Con 2020
-            is the one and only Kit Harington. For the uninitiated, Jon Snow
-            himself will be gracing us with his presence. But wait...there
-            more.<br />
-            We are offering <span class="lucky">one lucky</span> fangirl or
-            fanboy the chance to meet Kit, receive a persnalised autograph and
-            photo session. To be in the running, we are running a cosplay
-            competition. To help you learn more about your favourite GoT
-            character, simply search their name above, then select what you
-            would like to learn about then via the navigation below. Once you've
-            chosen your character, register your entry below. Onward!
-          </p>
+  <div class="row searchrow">
+    <div class="cell large-9 text-center text-center">
+      <p>Welcome to the <span class="fandom">fandom zone</span>!</p>
+      <p></p>
+      <p></p>
+      <form>
+        <div class="input-group text-center searchstyle">
+          <input class="input-group-field text-center searchInput" id="search-input" type="text" placeholder="Jon Snow"
+            required />
+          <button id="search" class="btnStyle">
+            <i class="fas fa-search searchIcon"></i>
+          </button>
         </div>
-        <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-
-        <div class="results">
-          <div class="content" id="site1"></div>
-          <div class="content2"></div>
-          <div class="content3"></div>
-          <div class="content4"></div>
-          <div class="content5"></div>
-        </div>
-        <p class="text-center"></p>
-
-      </div>
+      </form>
     </div>
+  </div>
 
-    <!-- END: Main Content Area -->
+  <!-- END: Search Button-->
 
-    <!-- START: Menu Links -->
+  <!-- START: Main Content Area -->
 
-    <div class="row">
-      <div class="columns">
-        <ul class="menu align-center">
-          <div><hr /></div>
-          <li class="textmenu is-active">
-            <a href="#site1"
-              ><i class="fas fa-user-shield"></i><br />
-              Character</a
-            >
-          </li>
-          <li>
-            <a href="https://gameofthrones.fandom.com/wiki/Great_House"
-              ><i class="fas fa-book icon"></i><br />
-              Books</a
-            >
-          </li>
-          <li>
-            <a href="#rating" id="imdb"
-              ><i class="fas fa-tv icon"></i><br />
-              T.V Info</a
-            >
-          </li>
-          <!-- <li>
+  <div class="cell medium-12 text-center">
+    <div id="maincontent">
+      <div class="text-center textbody hero">
+        <p class="display-text">
+          Oz Comic-Con invites Game of Thrones fans of all ages to a truly
+          unfrogettable experience. Our Special guest at the Oz Comic-Con 2020
+          is the one and only Kit Harington. For the uninitiated, Jon Snow
+          himself will be gracing us with his presence. But wait...there
+          more.<br />
+          We are offering <span class="lucky">one lucky</span> fangirl or
+          fanboy the chance to meet Kit, receive a persnalised autograph and
+          photo session. To be in the running, we are running a cosplay
+          competition. To help you learn more about your favourite GoT
+          character, simply search their name above, then select what you
+          would like to learn about then via the navigation below. Once you've
+          chosen your character, register your entry below. Onward!
+        </p>
+      </div>
+      <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
+
+      <div class="results">
+        <div class="content" id="site1"></div>
+        <div class="content2" id="site2"></div>
+        <div class="content3" id="site3"></div>
+        <div class="content4"></div>
+      </div>
+      <p class="text-center"></p>
+
+    </div>
+  </div>
+
+  <!-- END: Main Content Area -->
+
+  <!-- START: Menu Links -->
+
+  <div class="row">
+    <div class="columns">
+      <ul class="menu align-center">
+        <div>
+          <hr />
+        </div>
+        <li class="textmenu is-active">
+          <a href="#site1"><i class="fas fa-user-shield"></i><br />
+            Character</a>
+        </li>
+        <li>
+          <a href="#site2"><i class="fas fa-book icon"></i><br />
+            Books</a>
+        </li>
+        <li>
+          <a href="#rating" id="imdb"><i class="fas fa-tv icon"></i><br />
+            T.V Info</a>
+        </li>
+        <!-- <li>
             <a href="#fourth"
               ><i class="fas fa-newspaper icon"></i><br />
               news</a
             >
           </li> -->
-          <li>
-            <a href="https://giphy.com/search/game-of-thrones-stickers"
-              ><i class="fas fa-photo-video icon"></i><br />
-              Giphys</a
-            >
-          </li>
-        </ul>
-      </div>
+        <li>
+          <a href="#site3"><i class="fas fa-photo-video icon"></i><br />
+            Giphys</a>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <!-- END: Menu Links -->
+  <!-- END: Menu Links -->
 
-    <!-- START: Register input fields -->
+  <!-- START: Register input fields -->
 
-    <div class="row register-row">
-      <div class="cell small-12 text-center">
-        <form>
-          <div class="input-group text-center searchstyle">
-            <button id="search" class="registerBtnStyle">
-              <i class=""></i>REGISTER NOW
-            </button>
-          </div>
-        </form>
-      </div>
+  <div class="row register-row">
+    <div class="cell small-12 text-center">
+      <form>
+        <div class="input-group text-center searchstyle">
+          <button id="search" class="registerBtnStyle">
+            <i class=""></i>REGISTER NOW
+          </button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <!-- END: Register input fields -->
+  <!-- END: Register input fields -->
 
-    <!-- START: Footer-->
+  <!-- START: Footer-->
 
-    <div class="sticky-footer">
-      <div class="cell large-12 text-center text-center">
-        <p><img class="logo" src="assets/images/logo.png" alt="" /></p>
-        <p class="text-center text-footer placeholder">
-          Designed + Developed by Suicide Squad for OzComicCon
-        </p>
-      </div>
+  <div class="sticky-footer">
+    <div class="cell large-12 text-center text-center">
+      <p><img class="logo" src="assets/images/logo.png" alt="" /></p>
+      <p class="text-center text-footer placeholder">
+        Designed + Developed by Suicide Squad for OzComicCon
+      </p>
     </div>
+  </div>
 
-    <!-- END: Footer-->
+  <!-- END: Footer-->
 
-    <!-- Script tags -->
-  
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  <!-- Script tags -->
 
-    <!-- End: Body Content -->
-  </body>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <!-- End: Body Content -->
+</body>
+
 </html>
