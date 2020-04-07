@@ -10,7 +10,7 @@ $(".btnStyle").on("click", function () {
         method: "GET"
     }).then(function (data) {
         console.log(data);
-         //$(".content").text("CHARACTER = " + data[0].born + " " + data[0].culture + " " + data[0].gender + " " + data[0].aliases + " " + data[0].aliases);
+        
          var faveCharacter = $("<p class='results-title'>").text("Meet your favourite GoT character, ");
          $(".content1").append(faveCharacter);
          var name = $("<p>").text(data[0].name + "!");
@@ -41,14 +41,6 @@ $(".btnStyle").on("click", function () {
         $(".content2").append(book);
         var authors = $("<p>").text("Author: " + "'" + data.authors[0] + "'");
         $(".content2").append(authors);
-        // var publisher = $("<p>").text("Publisher: " + data.publisher);
-        // $(".content2").append(publisher);
-        // var country = $("<p>").text("Country: " + data.country);
-        // $(".content2").append(country);
-        // var mediaType = $("<p>").text("Media Type: " + data.mediaType);
-        // $(".content2").append(mediaType);
-        // var numberOfPages = $("<p>").text("Pages: " + data.numberOfPages);
-        // $(".content2").append(numberOfPages);
         var released = $("<p>").text("Released: " + data.released);
         $(".content2").append(released);
     });
