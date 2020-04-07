@@ -11,18 +11,20 @@ $(".btnStyle").on("click", function () {
     }).then(function (data) {
         console.log(data);
          //$(".content").text("CHARACTER = " + data[0].born + " " + data[0].culture + " " + data[0].gender + " " + data[0].aliases + " " + data[0].aliases);
-        var name = $("<p>").text("Name: " + data[0].name);
-        $(".content").append(name);
-        var born = $("<p>").text("Born: " + data[0].born);
-        $(".content").append(born);
-        var culture = $("<p>").text("Culture: " + data[0].culture);
-        $(".content").append(culture);
+         var faveCharacter = $("<p class='results-title'>").text("Meet your favourite GoT character, ");
+         $(".content1").append(faveCharacter);
+         var name = $("<p>").text(data[0].name + "!");
+        $(".content1").append(name);
         var gender = $("<p>").text("Gender: " + data[0].gender);
-        $(".content").append(gender);
-        var titles = $("<p>").text("Titles: " + data[0].titles);
-        $(".content").append(titles);
-        var aliases = $("<p>").text("Aliases: " + data[0].aliases);
-        $(".content").append(aliases);
+        $(".content1").append(gender);
+        var born = $("<p>").text("Born " + data[0].born + ",");
+        $(".content1").append(born);
+        var culture = $("<p>").text("into the " + data[0].culture + " culture");
+        $(".content1").append(culture);
+        var titles = $("<p>").text("Their official title is, " + data[0].titles + ".");
+        $(".content1").append(titles);
+        var aliases = $("<p>").text("But they are also known as, " + data[0].aliases);
+        $(".content1").append(aliases);
 
     });
     // Books API
@@ -33,20 +35,22 @@ $(".btnStyle").on("click", function () {
     }).then(function (data) {
         console.log(data);
         //$(".content2").text("BOOK = " + data.name + " " + data.authors[0] + " " + data.publisher + " " + data.country + " " + data.mediaType + " " + data.numberOfPages + " " + data.released);
+        var bookSection= $("<p class='results-title'>").text("Book info");
+        $(".content2").append(bookSection);
         var book = $("<p>").text("Book: " + data.name);
         $(".content2").append(book);
-        var authors = $("<p>").text("Author: " + data.authors[0]);
+        var authors = $("<p>").text("Author: " + "'" + data.authors[0] + "'");
         $(".content2").append(authors);
-        var publisher = $("<p>").text("Publisher: " + data.publisher);
-        $(".content2").append(publisher);
-        var country = $("<p>").text("Country: " + data.country);
-        $(".content2").append(country);
-        var mediaType = $("<p>").text("Media Type: " + data.mediaType);
-        $(".content2").append(mediaType);
-        var numberOfPages = $("<p>").text("Pages: " + data.numberOfPages);
-        $(".content2").append(numberOfPages);
-        var released = $("<p>").text("Released: " + data.released);
-        $(".content2").append(released);
+        // var publisher = $("<p>").text("Publisher: " + data.publisher);
+        // $(".content2").append(publisher);
+        // var country = $("<p>").text("Country: " + data.country);
+        // $(".content2").append(country);
+        // var mediaType = $("<p>").text("Media Type: " + data.mediaType);
+        // $(".content2").append(mediaType);
+        // var numberOfPages = $("<p>").text("Pages: " + data.numberOfPages);
+        // $(".content2").append(numberOfPages);
+        // var released = $("<p>").text("Released: " + data.released);
+        // $(".content2").append(released);
     });
    
     // Giphy API

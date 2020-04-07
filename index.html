@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game of Thrones | Fandom App.</title>
+    <title>Game of Thrones | The Fandom Zone</title>
     <link href="css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <script
@@ -13,6 +13,10 @@
     <!--google font-->
     <link
       href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Italianno|Jim+Nightshade|Lovers+Quarrel|Tangerine&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,14 +43,18 @@
 
     <div class="row searchrow">
       <div class="cell large-9 text-center text-center">
-        <p>Welcome to the <span class="fandom">fandom zone</span>!</p>
-        <p></p>
+        <p class="fandom">enter your favourite GoT character name below</p>
+        <p class="catchy-title">
+          to enter the fandom zone...the place where the magic happens
+          <i class="fas fa-feather-alt quill"></i>
+        </p>
         <p></p>
         <form>
           <div class="input-group text-center searchstyle">
             <input
               class="input-group-field text-center searchInput"
-              id="search-input" type="text"
+              id="search-input"
+              type="text"
               placeholder="Jon Snow"
               required
             />
@@ -67,30 +75,28 @@
         <div class="text-center textbody hero">
           <p class="display-text">
             Oz Comic-Con invites Game of Thrones fans of all ages to a truly
-            unfrogettable experience. Our Special guest at the Oz Comic-Con 2020
-            is the one and only Kit Harington. For the uninitiated, Jon Snow
-            himself will be gracing us with his presence. But wait...there
-            more.<br />
-            We are offering <span class="lucky">one lucky</span> fangirl or
-            fanboy the chance to meet Kit, receive a persnalised autograph and
-            photo session. To be in the running, we are running a cosplay
-            competition. To help you learn more about your favourite GoT
-            character, simply search their name above, then select what you
-            would like to learn about then via the navigation below. Once you've
-            chosen your character, register your entry below. Onward!
+            unfrogettable experience. Our Special guest at Oz Comic-Con 2021 is
+            the Jon Snow himself, Mr. Kit Harington. But wait...there more.<br /><br />
+            We are offering <span class="lucky">one lucky</span> fan the chance
+            to meet Kit, receive a persnalised autograph and photo session. To
+            be in the running, simply search your favourite GoT character above,
+            then select what you would like to learn about them below. Life is
+            not a song, sweetling. Someday you may learn that, to your sorrow.
+            So, once you've chosen your character, register your entry below. As
+            Summer will end soon enough, and childhood as well, so onward on
+            your quest to be the ruler of the GoT Fandom Zone!
           </p>
         </div>
         <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
 
         <div class="results">
-          <div class="content" id="site1"></div>
-          <div class="content2"></div>
-          <div class="content3"></div>
-          <div class="content4"></div>
-          <div class="content5"></div>
+          <div class="content1 output-results" id="site1"></div>
+          <div class="content2 output-results"></div>
+          <div class="content3 output-results"></div>
+          <div class="content4 output-results figcaption"></div>
+          <div class="content5 output-results"></div>
         </div>
         <p class="text-center"></p>
-
       </div>
     </div>
 
@@ -104,14 +110,14 @@
           <div><hr /></div>
           <li class="textmenu is-active">
             <a href="#site1"
-              ><i class="fas fa-user-shield"></i><br />
+              ><i class="fas fa-user-shield icon"></i><br />
               Character</a
             >
           </li>
           <li>
             <a href="https://gameofthrones.fandom.com/wiki/Great_House"
-              ><i class="fas fa-book icon"></i><br />
-              Books</a
+              ><i class="fab fa-fort-awesome icon"></i><br />
+              Houses</a
             >
           </li>
           <li>
@@ -168,7 +174,7 @@
     <!-- END: Footer-->
 
     <!-- Script tags -->
-  
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script src="js/app.js"></script>
