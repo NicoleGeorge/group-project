@@ -46,7 +46,7 @@
           <div class="input-group text-center searchstyle">
             <input
               class="input-group-field text-center searchInput"
-              type="text"
+              id="search-input" type="text"
               placeholder="Jon Snow"
               required
             />
@@ -81,9 +81,16 @@
           </p>
         </div>
         <!-- SEARCH ITEMS - generated via APIs, TO BE PLACED HERE -->
-        <div class="content text-center"></div>
-        <div class="content2 text-center"></div>
-        <div class="content3 text-center"></div>
+
+        <div class="results">
+          <div class="content" id="site1"></div>
+          <div class="content2"></div>
+          <div class="content3"></div>
+          <div class="content4"></div>
+          <div class="content5"></div>
+        </div>
+        <p class="text-center"></p>
+
       </div>
     </div>
 
@@ -96,21 +103,21 @@
         <ul class="menu align-center">
           <div><hr /></div>
           <li class="textmenu is-active">
-            <a href="#first"
-              ><i class="fas fa-user-shield icon"></i><br />
+            <a href="#site1"
+              ><i class="https://awoiaf.westeros.org/index.php/Main_Page"></i><br />
               Character</a
             >
           </li>
           <li>
-            <a href="#second"
+            <a href="https://gameofthrones.fandom.com/wiki/Great_House"
               ><i class="fas fa-book icon"></i><br />
-              Books</a
+              Houses</a
             >
           </li>
           <li>
-            <a href="#fifth"
+            <a href="#rating" id="imdb"
               ><i class="fas fa-tv icon"></i><br />
-              television</a
+              Movie Info</a
             >
           </li>
           <!-- <li>
@@ -120,9 +127,9 @@
             >
           </li> -->
           <li>
-            <a href="#third"
+            <a href="https://giphy.com/search/game-of-thrones-stickers"
               ><i class="fas fa-photo-video icon"></i><br />
-              giphys</a
+              Giphy Stickers</a
             >
           </li>
         </ul>
@@ -161,10 +168,11 @@
     <!-- END: Footer-->
 
     <!-- Script tags -->
-    <script src="js/app.js"></script>
-    <script src="js/got.js"></script>
+  
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(document).foundation();
     </script>
