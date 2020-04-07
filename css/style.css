@@ -14,20 +14,45 @@ body {
   padding-top: 10px;
 }
 
-.textbody {
-  width: 80%;
-  height: auto;
-  padding-top: 30px;
-}
-
 .header {
   background-color: #b3c9d2 !important;
   padding: 20px;
   padding-top: 20px;
 }
 
+/* MAIN CONTENT STYLES */
+
+.textbody {
+  background-image: url("../assets/images/GoT-Logo-bkgd2.png");
+  color: #110f15;
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  padding-top: 30px;
+  align-items: center;
+  z-index: 2;
+}
+
 .hero {
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 40px;
   z-index: -1;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+.lucky {
+  color: #9b2c33;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.fandom {
+  color: #9b2c33;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 /* SEARCH FIELD STYLES */
@@ -188,7 +213,7 @@ p.text-footer {
 /* MOBILE VIEWORT */
 @media screen and (max-width: 39.9375em) {
   .sticky-header-css .header {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 0;
   }
 
@@ -197,12 +222,21 @@ p.text-footer {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
-    -ms-interpolation-mode: bicubic;
   }
 
   .textbody {
-    width: 70%;
-    padding-top: 20px 0;
+    width: 100%;
+    padding-top: 10px 0;
+    margin: 10px 0;
+  }
+
+  .hero {
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 2px;
   }
 
   /* SEARCH FIELDS */
