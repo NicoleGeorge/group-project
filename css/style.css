@@ -51,15 +51,16 @@ body {
 }
 
 .fandom {
-  font-size: 26px;
+  font-family: 'Cinzel';
+  font-size: 24px;
   color: #9b2c33;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-weight: bolder;
   margin-top: -20px;
 }
 
 .catchy-title {
-  font-family: "Italianno", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 36px;
   margin-top: -25px;
   padding: 20px 0;
@@ -276,16 +277,12 @@ p.text-footer {
   }
 
   .fandom {
-    font-size: 18px;
-    color: #9b2c33;
-    text-transform: capitalize;
-    font-weight: bolder;
+    font-size: 16px;
     margin-top: -20px;
   }
 
   .catchy-title {
-    font-family: "Italianno", cursive;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: -15px;
     padding: 10px 0;
   }
