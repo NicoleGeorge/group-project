@@ -48,22 +48,7 @@ $(".btnStyle").on("click", function () {
         var released = $("<p>").text("Released: " + data.released);
         $(".content2").append(released);
     });
-    // Houses API
-    var queryURLHouses = "https://www.anapioficeandfire.com/api/houses/378/";
-    $.ajax({
-        url: queryURLHouses,
-        method: "GET"
-    }).then(function (data) {
-        console.log(data);
-        // $(".content3").text("HOUSE = " + data[0].name + " " + data[0].region + " " + data[0].coatOfArms + " " + data[0].aliases);
-        var house = $("<p>").text("House: " + data.name);
-        $(".content3").append(house);
-        var region = $("<p>").text("Region: " + data.region);
-        $(".content3").append(region);
-        var coatOfArms = $("<p>").text("CoatOfArms: " + data.coatOfArms);
-        $(".content3").append(coatOfArms);
-
-    });
+   
     // Giphy API
     var queryGiphy = "https://api.giphy.com/v1/gifs/search?api_key=w5F8XRxKHMrbEYBn1oSBE3J3gmsYZ9v2&limit=1&q=";
     var str = document.getElementById("search-input").value.trim();
@@ -86,6 +71,7 @@ $(".btnStyle").on("click", function () {
             fig.appendChild(fc);
             var content4 = document.querySelector(".content4");
             content4.prepend(fig);
+            var music = document.createElement("mp4");
         })
         .catch(err => {
             console.log(err);
