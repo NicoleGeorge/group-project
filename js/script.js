@@ -49,18 +49,18 @@ $(".btnStyle").on("click", function () {
         $(".content2").append(released);
     });
     // Houses API
-    var queryURLHouses = "https://www.anapioficeandfire.com/api/houses";
+    var queryURLHouses = "https://www.anapioficeandfire.com/api/houses/378/";
     $.ajax({
         url: queryURLHouses,
         method: "GET"
     }).then(function (data) {
         console.log(data);
         // $(".content3").text("HOUSE = " + data[0].name + " " + data[0].region + " " + data[0].coatOfArms + " " + data[0].aliases);
-        var house = $("<p>").text("House: " + data[0].name);
+        var house = $("<p>").text("House: " + data.name);
         $(".content3").append(house);
-        var region = $("<p>").text("Region: " + data[0].region);
+        var region = $("<p>").text("Region: " + data.region);
         $(".content3").append(region);
-        var coatOfArms = $("<p>").text("CoatOfArms: " + data[0].coatOfArms);
+        var coatOfArms = $("<p>").text("CoatOfArms: " + data.coatOfArms);
         $(".content3").append(coatOfArms);
 
     });
