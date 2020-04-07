@@ -21,7 +21,7 @@ body {
 
 .fandom {
   font-family: "Cinzel";
-  font-size: 24px;
+  font-size: 52px;
   color: #9b2c33;
   text-transform: lowercase;
   font-weight: bolder;
@@ -29,10 +29,11 @@ body {
 }
 
 .catchy-title {
-  font-family: "Tangerine", cursive;
-  font-size: 36px;
-  margin-top: -25px;
+  font-family: "Jim Nightshade", cursive;
+  font-size: 52px;
+  margin-top: 20px 0;
   padding: 20px 0;
+  line-height: 25px;
 }
 
 .quill {
@@ -67,11 +68,10 @@ body {
 }
 
 .kit {
-  font-family: "Tangerine", cursive;
+  font-family: "Jim Nightshade", cursive;
   font-size: 42px;
   color: #9b2c33;
   text-transform: capitalize;
-  font-weight: bold;
   letter-spacing: 4px;
 }
 
@@ -281,15 +281,14 @@ p.text-footer {
   }
 
   .catchy-title {
-    font-size: 32px;
+    font-size: 30px;
     margin-top: -10px;
     padding: 10px 0;
-    line-height: 15px;
+    line-height: 25px;
   }
 
   .quill {
     color: #9b2c33;
-    margin-left: 15px;
   }
 
   .textbody {
@@ -376,10 +375,9 @@ p.text-footer {
 
   /* MENU STYLE */
   .menu a {
-    padding: 22px 20px;
+    padding: 25px 25px;
     font-size: 14px;
-    margin: 20px 10px;
-    
+    margin: 20px 5px;
   }
 
   li {
@@ -412,7 +410,7 @@ p.text-footer {
     margin-top: 25px;
     border: none;
     position: relative;
-    left: 35%;
+    left: 30%;
     width: 100%;
   }
 }
@@ -443,7 +441,6 @@ p.text-footer {
   }
 
   .catchy-title {
-    font-family: "Italianno", cursive;
     font-size: 42px;
     margin-top: -15px;
     padding: 20px 0;
@@ -458,5 +455,13 @@ p.text-footer {
 
   .textbody {
     font-size: 20px;
+  }
+
+  .register-row {
+    margin-top: 25px;
+    border: none;
+    position: relative;
+    left: 40%;
+    width: 100%;
   }
 }

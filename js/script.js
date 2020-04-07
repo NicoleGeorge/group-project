@@ -49,8 +49,8 @@ $(".btnStyle").on("click", function () {
         // $(".content2").append(mediaType);
         // var numberOfPages = $("<p>").text("Pages: " + data.numberOfPages);
         // $(".content2").append(numberOfPages);
-        // var released = $("<p>").text("Released: " + data.released);
-        // $(".content2").append(released);
+        var released = $("<p>").text("Released: " + data.released);
+        $(".content2").append(released);
     });
    
     // Giphy API
@@ -94,6 +94,9 @@ $("#imdb").on("click", function () {
         method: "GET"
     }).then(function (data) {
         console.log(data);
+
+        var tvHeading = $("<p class='results-title'>").text("Television Series ");
+        $(".content4").append(tvHeading);
 
         var title = $("<p>").text("Title: " + data.Title);
         $(".content4").append(title);
