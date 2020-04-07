@@ -87,7 +87,38 @@ $(".btnStyle").on("click", function () {
     .catch((err) => {
       console.log(err);
     });
+<<<<<<< HEAD
   document.querySelector("#search-input").value = "";
+=======
+   
+    // Giphy API
+    var queryGiphy = "https://api.giphy.com/v1/gifs/search?api_key=w5F8XRxKHMrbEYBn1oSBE3J3gmsYZ9v2&limit=1&q=";
+    var str = document.getElementById("search-input").value.trim();
+    queryGiphy = queryGiphy.concat(str);
+    console.log(queryGiphy);
+    fetch(queryGiphy)
+        .then(response => response.json())
+        .then(content => {
+            console.log(content);
+
+            console.log(content.data);
+            console.log("META", content.meta);
+            var fig = document.createElement("figure");
+            var img = document.createElement("img");
+            var fc = document.createElement("figcaption");
+            img.src = content.data[0].images.downsized_large.url;
+            img.alt = content.data[0].title;
+            fc.textContent = content.data[0].title;
+            fig.appendChild(img);
+            fig.appendChild(fc);
+            var content3 = document.querySelector(".content3");
+            content3.prepend(fig);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    document.querySelector("#search-input").value = "";
+>>>>>>> e9f0aefbba1aeea1094e20164c4d8167487f33af
 });
 // Movie rating API
 $("#imdb").on("click", function () {
