@@ -34,7 +34,7 @@ $(".btnStyle").on("click", function () {
         method: "GET"
     }).then(function (data) {
         console.log(data);
-        //$(".content2").text("BOOK = " + data.name + " " + data.authors[0] + " " + data.publisher + " " + data.country + " " + data.mediaType + " " + data.numberOfPages + " " + data.released);
+    
         var bookSection= $("<p class='results-title'>").text("Book info");
         $(".content2").append(bookSection);
         var book = $("<p>").text("Book: " + data.name);
