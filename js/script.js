@@ -1,6 +1,7 @@
 $(".btnStyle").on("click", function () {
     event.preventDefault();
     $(".textbody").hide();
+    $("#hideRegis").hide();
     var search = $("#search-input").val();
     console.log(search);
     // Character Info API
@@ -34,7 +35,7 @@ $(".btnStyle").on("click", function () {
         method: "GET"
     }).then(function (data) {
         console.log(data);
-        //$(".content2").text("BOOK = " + data.name + " " + data.authors[0] + " " + data.publisher + " " + data.country + " " + data.mediaType + " " + data.numberOfPages + " " + data.released);
+    
         var bookSection= $("<p class='results-title'>").text("Book info");
         $(".content2").append(bookSection);
         var book = $("<p>").text("Book: " + data.name);
@@ -78,6 +79,7 @@ $(".btnStyle").on("click", function () {
 $("#imdb").on("click", function () {
     event.preventDefault();
     $(".textbody").hide();
+    $("#hideRegis").hide();
     var search = $("#search-input").val();
     console.log(search);
     var queryURL = "http://www.omdbapi.com/?i=tt0944947&apikey=ce894930";

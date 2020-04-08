@@ -44,7 +44,7 @@ body {
 
 /* MAIN CONTENT STYLES */
 
-.textbody {
+.textstyles {
   background-image: url("../assets/images/GoT-Logo-bkgd2.png");
   color: #110f15;
   font-size: 24px;
@@ -121,6 +121,10 @@ body {
 
 /* SEARCH OUTPUT STYLES */
 
+.background-color {
+  margin-top: 0px;
+}
+
 .output-results {
   font-size: 16px;
   font-weight: 500;
@@ -151,7 +155,6 @@ body {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
-  margin-bottom: 15px;
 }
 
 /* MENU STYLES */
@@ -212,7 +215,7 @@ li {
   color: #efad99;
   font-weight: bold;
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   width: 150px;
   height: 60px;
   margin: 10px 10px;
@@ -224,11 +227,54 @@ li {
   color: #110f15;
   font-weight: bold;
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   width: 150px;
   height: 60px;
   margin: 10px 10px;
   box-shadow: 5px 5px;
+}
+/*FORM REGISTRATION STYLE*/
+
+h3 {
+  font-family: "Montserrat";
+  color: #914223;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.form_style {
+  width: 64%;
+  background-color: #efad9982;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  margin: auto;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.register-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background: #9b2c33;
+}
+.register-button:hover {
+  color: #efad99;
+  background: #110f15;
+}
+
+#hideRegis {
+  display: none;
+  margin-top: 20px;
 }
 
 /* STICKY FOOTER STYLES*/
@@ -291,7 +337,7 @@ p.text-footer {
     color: #9b2c33;
   }
 
-  .textbody {
+  .textstyles {
     width: 100%;
     padding-top: 10px 0;
     margin: 10px 0;
@@ -371,6 +417,11 @@ p.text-footer {
     text-align: center;
     width: 85%;
     margin: auto;
+    margin-top: 20px;
+  }
+
+  .form_style {
+    width: 90%;
   }
 
   /* MENU STYLE */
