@@ -349,7 +349,6 @@ p.text-footer {
   .hero {
     background-position: center;
     background-attachment: fixed;
-    margin-top: 40px;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-bottom: 2px;
@@ -463,6 +462,9 @@ p.text-footer {
     position: relative;
     left: 30%;
     width: 100%;
+  }
+  .background-color {
+    margin-top: 0px;
   }
 }
 
