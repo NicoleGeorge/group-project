@@ -82,7 +82,7 @@ $("#imdb").on("click", function () {
     $("#hideRegis").hide();
     var search = $("#search-input").val();
     console.log(search);
-    var queryURL = "http://www.omdbapi.com/?i=tt0944947&apikey=ce894930";
+    var queryURL = "https://www.omdbapi.com/?i=tt0944947&apikey=ce894930";
     $.ajax({
         url: queryURL,
         method: "GET"
