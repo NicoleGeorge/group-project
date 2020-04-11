@@ -1,7 +1,7 @@
 # Game of Thrones: THE FANDOM ZONE APP
 "inside the Fandom Zone is where the magic happens"
 
-# Client Brief =>
+# Client Brief
 Our Client, Oz Comic Con, wants to generate interest around Kit Harington as their special guest at the 2021 convention. They are running a competition to meet the star of the television series, Kit Harington, via a cosplay contest. They want an app that will appeal to their newer fans as a way to research their favourite character and register for the competition.
 
 # Elevator Pitch
@@ -60,15 +60,15 @@ The Fandom Zone is available via the following link;
 [Slideshow link](https://www.canva.com/design/DAD4qdWwwmk/0q_h4BcIbnUpxcMqZ6aKxA/view)
 
 # Authors
-- Alvaro - Back End Development + Testing [github](https://github.com/Anieto86)
-- Angelo - Back End Development + Testing [github](https://github.com/vlad916)
-- Nicole - Front End Development + App Design [github](https://github.com/NicoleGeorge)
-- Ruma - Front End Development + Foundation Framework development [github](https://github.com/RumaRDas)
+- Alvaro - Back End Development + Testing [GitHub Profile](https://github.com/Anieto86)
+- Angelo - Back End Development + Testing [GitHub Profile](https://github.com/vlad916)
+- Nicole - Front End Development + App Design [GitHub Profile](https://github.com/NicoleGeorge)
+- Ruma - Front End Development + Foundation Framework development [GitHub Profile](https://github.com/RumaRDas)
 
 Acknowledgments:
-Background image [Rad Game of Thrones artwork by Vincent Aseo](https://www.reddit.com/r/gameofthrones/comments/6bn5mf/everything_rad_game_of_thrones_artwork_by_vincent/)
-Zurb [Foundation Framework Templates](https://get.foundation/index.html)
-Content [Goodreads](https://www.goodreads.com/)
+- Background image [Rad Game of Thrones artwork by Vincent Aseo](https://www.reddit.com/r/gameofthrones/comments/6bn5mf/everything_rad_game_of_thrones_artwork_by_vincent/)
+- Zurb [Foundation Framework Templates](https://get.foundation/index.html)
+- Content [Goodreads](https://www.goodreads.com/)
 
 
 
